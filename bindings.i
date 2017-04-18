@@ -24,7 +24,7 @@ extern          void setPadDrive         (int group, int value) ;
 extern          int  getAlt              (int pin) ;
 extern          void pwmToneWrite        (int pin, int freq) ;
 extern          void digitalWriteByte    (int value) ;
-extern unsigned int  digitalReadByte     (void) ;
+//extern unsigned int  digitalReadByte     (void) ;
 extern          void pwmSetMode          (int mode) ;
 extern          void pwmSetRange         (unsigned int range) ;
 extern          void pwmSetClock         (int divisor) ;
@@ -52,8 +52,8 @@ extern int wiringPiI2CSetup          (const int devId) ;
 // Header file WiringPi/wiringPi/wiringPiSPI.h
 int wiringPiSPIGetFd     (int channel) ;
 int wiringPiSPIDataRW    (int channel, unsigned char *data, int len) ;
-int wiringPiSPISetupMode (int channel, int speed, int mode) ;
-int wiringPiSPISetup     (int channel, int speed) ;
+#int wiringPiSPISetupMode (int channel, int speed, int mode) ;
+#int wiringPiSPISetup     (int channel, int speed) ;
 
 // Header file WiringPi/wiringPi/wiringSerial.h
 extern int   serialOpen      (const char *device, const int baud) ;
@@ -73,7 +73,7 @@ extern void    shiftOut     (uint8_t dPin, uint8_t cPin, uint8_t order, uint8_t 
 extern int drcSetupSerial (const int pinBase, const int numPins, const char *device, const int baud) ;
 
 // Header file WiringPi/wiringPi/ads1115.h
-extern int ads1115Setup (int pinBase, int i2cAddress) ;
+//extern int ads1115Setup (int pinBase, int i2cAddress) ;
 
 // Header file WiringPi/wiringPi/max31855.h
 extern int max31855Setup (int pinBase, int spiChannel) ;
@@ -208,15 +208,15 @@ extern int          setupNesJoystick (int dPin, int cPin, int lPin) ;
 extern unsigned int  readNesJoystick (int joystick) ;
 
 // Header file WiringPi/devLib/scrollPhat.h
-extern void scrollPhatPoint      (int x, int y, int colour) ;
-extern void scrollPhatLine       (int x0, int y0, int x1, int y1, int colour) ;
-extern void scrollPhatLineTo     (int x, int y, int colour) ;
-extern void scrollPhatRectangle  (int x1, int y1, int x2, int y2, int colour, int filled) ;
-extern void scrollPhatUpdate     (void) ;
-extern void scrollPhatClear      (void) ;
-extern int  scrollPhatPutchar    (int c) ;
-extern void scrollPhatPuts       (const char *str) ;
-extern void scrollPhatPrintf     (const char *message, ...) ;
-extern void scrollPhatPrintSpeed (const int cps10) ;
-extern void scrollPhatIntensity  (const int percent) ;
-extern int  scrollPhatSetup      (void) ;
+//extern void scrollPhatPoint      (int x, int y, int colour) ;
+//extern void scrollPhatLine       (int x0, int y0, int x1, int y1, int colour) ;
+//extern void scrollPhatLineTo     (int x, int y, int colour) ;
+//extern void scrollPhatRectangle  (int x1, int y1, int x2, int y2, int colour, int filled) ;
+//extern void scrollPhatUpdate     (void) ;
+//extern void scrollPhatClear      (void) ;
+//extern int  scrollPhatPutchar    (int c) ;
+//extern void scrollPhatPuts       (const char *str) ;
+//extern void scrollPhatPrintf     (const char *message, ...) ;
+//extern void scrollPhatPrintSpeed (const int cps10) ;
+//extern void scrollPhatIntensity  (const int percent) ;
+//extern int  scrollPhatSetup      (void) ;
