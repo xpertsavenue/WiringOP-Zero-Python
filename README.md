@@ -12,7 +12,7 @@ Built against Python 2.7.2, Python 3.2.3
 ##Get/setup repo
 ```bash
 git clone --recursive https://github.com/xpertsavenue/WiringOP-Zero-Python
-cd WiringPi-Python-OP
+cd WiringOP-Zero-Python
 ```
 
 ##Prerequisites
@@ -24,7 +24,8 @@ sudo apt-get install python-dev python-setuptools swig
 
 ##Build WiringPi
 ```bash
-cd WiringPi
+cd WiringOP-Zero
+chmod +x build
 sudo ./build
 ```
 
