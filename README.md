@@ -6,6 +6,7 @@ WiringPi: An implementation of most of the Arduino Wiring
 WiringPi implements new functions for managing IO expanders.
 
 ## Testing
+Pinmapping is not correct for the orange pi zero!
 <!---
 Build with gcc version 4.6.3 (Debian 4.6.3-14+rpi1)
 Built against Python 2.7.2, Python 3.2.3
