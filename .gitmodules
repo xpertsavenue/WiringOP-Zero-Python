@@ -1,3 +1,6 @@
 [submodule "WiringPi"]
 	path = WiringPi
 	url = http://github.com/wiringPi/WiringPi
+[submodule "WiringOP-Zero"]
+	path = WiringOP-Zero
+	url = https://github.com/xpertsavenue/WiringOP-Zero
