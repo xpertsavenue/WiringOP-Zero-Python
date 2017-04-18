@@ -1,49 +1,49 @@
-#WiringPi for Python
+# WiringPi for Python
 
 WiringPi: An implementation of most of the Arduino Wiring
 	functions for the Orange Pi Zero
 
 WiringPi implements new functions for managing IO expanders.
 
-##Testing
+## Testing
 Build with gcc version 4.6.3 (Debian 4.6.3-14+rpi1)
 Built against Python 2.7.2, Python 3.2.3
 
-##Get/setup repo
+## Get/setup repo
 ```bash
 git clone --recursive https://github.com/xpertsavenue/WiringOP-Zero-Python
 cd WiringOP-Zero-Python
 ```
 
-##Prerequisites
+## Prerequisites
 To rebuild the bindings
 you **must** first have python-dev, python-setuptools and swig installed.
 ```bash
 sudo apt-get install python-dev python-setuptools swig
 ```
 
-##Build WiringPi
+## Build WiringPi
 ```bash
 cd WiringOP-Zero
 chmod +x build
 sudo ./build
 ```
 
-##Generate Bindings
+## Generate Bindings
 `swig2.0 -python wiringpi.i`
 or
 `swig3.0 -thread -python wiringpi.i`
 
-##Build & install with
+## Build & install with
 `sudo python setup.py install`
 
 Or Python 3:
 `sudo python3 setup.py install`
 
-#Class-based Usage
+# Class-based Usage
 Description incoming!
 
-##Usage
+## Usage
 
 	import wiringpi
 	
